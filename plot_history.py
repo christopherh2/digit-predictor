@@ -2,6 +2,11 @@ import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 
 def plot_history(history):
+    '''
+    This function takes in a history object from keras and plots the history of the model.
+    Metrics plotted are accuracy and loss for both training and validation.
+    Function requires matplotlib to work.
+    '''
     acc = history.history['accuracy']
     val_acc = history.history['val_accuracy']
     loss = history.history['loss']
